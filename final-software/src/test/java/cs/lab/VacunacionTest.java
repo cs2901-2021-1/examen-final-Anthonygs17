@@ -36,10 +36,10 @@ class VacunacionTest {
     @Test
     public void testCase2(){
         String username, password;
-        username = "anthony";
-        password = "ohtna";
+        username = "maor";
+        password = "roam";
         Login login = new Login(username, password);
-        String response = login.statusLogin();
-        Assert.assertEquals(response, "Usuario autenticado incorrectamente");
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(2), "Actualmente, 30% de personas estan completamente vacunadas");
     }
 };

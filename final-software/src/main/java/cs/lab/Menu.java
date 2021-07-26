@@ -26,38 +26,41 @@ public class Menu {
         logger.info("8. Cerrar sesión");
         option = scanner.nextInt();
         scanner.close();
-        chooseOption(option);
+        String response = chooseOption(option);
+        logger.info(response);
     }
 
-    public void chooseOption(int option){
+    public String chooseOption(int option){
+        String response;
         switch (option){
             case 1:
-                logger.info("Actualmente, 50% de personas estan vacunadas");
+                response = "Actualmente, 50% de personas estan vacunadas";
                 break;
             case 2:
-                logger.info("Actualmente, 30% de personas estan completamente vacunadas");
+                response = "Actualmente, 30% de personas estan completamente vacunadas";
                 break;
             case 3:
-                logger.info("Hay 30 centros de vacunacion");
+                response = "Hay 30 centros de vacunacion";
                 break;
             case 4:
-                logger.info("Hay 6 564 323 personas vacunadas parcialmente");
+                response = "Hay 6 564 323 personas vacunadas parcialmente";
                 break;
             case 5:
-                logger.info("Hay 6 564 323 personas vacunadas completamente");
+                response = "Hay 6 564 323 personas vacunadas completamente";
                 break;
             case 6:
-                logger.info("Elija el centro de vacunacion para dar de alta");
+                response = "Elija el centro de vacunacion para dar de alta";
                 break;
             case 7:
-                logger.info("Elija el centro de vacunacion para dar de baja");
+                response = "Elija el centro de vacunacion para dar de baja";
                 break;
             case 8:
-                logger.info("Vuelva pronto!");
+                response = "Vuelva pronto!";
                 break;
             default:
-                logger.info("No marco una opcion valida");
+                response = "No marco una opcion valida";
         }
+        return response;
     }
 
 }
