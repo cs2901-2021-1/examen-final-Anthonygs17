@@ -10,7 +10,6 @@ import java.util.Scanner;
 import java.lang.String;
 import java.util.logging.Logger;
 
-
 class VacunacionTest {
     static final Logger logger = Logger.getLogger(Vacunacion.class.getName());
 
@@ -22,13 +21,20 @@ class VacunacionTest {
         Login login = new Login(username, password);
         String response = login.statusLogin();
         Assert.assertEquals(response, "Usuario autenticado correctamente");
-        /*CSTranslator csTranslator = new CSTranslator();
-        String response = csTranslator.translateXYZ();
-        Assert.assertEquals(response, "Door");*/
     }
 
     @Test
     public void testCase1(){
+        String username, password;
+        username = "anthony";
+        password = "ohtna";
+        Login login = new Login(username, password);
+        String response = login.statusLogin();
+        Assert.assertEquals(response, "Usuario autenticado incorrectamente");
+    }
+
+    @Test
+    public void testCase2(){
         String username, password;
         username = "anthony";
         password = "ohtna";

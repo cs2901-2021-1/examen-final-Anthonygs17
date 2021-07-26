@@ -16,7 +16,6 @@ public class Login {
         username = scanner.nextLine();
         logger.info("Contraseña: ");
         password = scanner.nextLine();
-        scanner.close();
         if(password.equals(reverseWord(username))){
             logger.info("Usuario autenticado correctamente");
         }else{
@@ -30,21 +29,12 @@ public class Login {
     }
 
     public Login(String username, String password){
-        /*logger.info("Bienvenido!!!");
-        logger.info("Inicie sesión por favor: ");
-        logger.info("Usuario: ");*/
         this.username = username;
-        //logger.info("Contraseña: ");
         this.password = password;
-        /*if(this.password.equals(reverseWord(this.username))){
-            logger.info("Usuario autenticado correctamente");
-        }else{
-            logger.info("Usuario autenticado incorrectamente :(");
-        }*/
     }
 
     public String statusLogin(){
-        if(password.equals(reverseWord(this.username))){
+        if(password.equals(reverseWord(username))){
             return "Usuario autenticado correctamente";
         }
         return "Usuario autenticado incorrectamente";
