@@ -42,4 +42,84 @@ class VacunacionTest {
         Menu menu = new Menu();
         Assert.assertEquals(menu.chooseOption(2), "Actualmente, 30% de personas estan completamente vacunadas");
     }
+
+    @Test
+    public void testCase3(){
+        String username, password;
+        username = "maor";
+        password = "roam";
+        Login login = new Login(username, password);
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(3), "Hay 30 centros de vacunacion");
+    }
+
+    @Test
+    public void testCase4(){
+        String username, password;
+        username = "maor";
+        password = "roam";
+        Login login = new Login(username, password);
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(4), "Hay 6 564 323 personas vacunadas parcialmente");
+    }
+
+    @Test
+    public void testCase5(){
+        String username, password;
+        username = "maor";
+        password = "roam";
+        Login login = new Login(username, password);
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(5), "Hay 3 842 323 personas vacunadas completamente");
+    }
+
+    @Test
+    public void testCase6(){
+        String username, password;
+        username = "maor";
+        password = "roam";
+        Login login = new Login(username, password);
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(6), "Elija el centro de vacunacion para dar de alta");
+    }
+
+    @Test
+    public void testCase7(){
+        String username, password;
+        username = "maor";
+        password = "roam";
+        Login login = new Login(username, password);
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(7), "Elija el centro de vacunacion para dar de baja");
+    }
+
+    @Test
+    public void testCase8(){
+        String username, password;
+        username = "maor";
+        password = "roam";
+        Login login = new Login(username, password);
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(8), "Vuelva pronto!");
+    }
+
+    @Test
+    public void testCase9(){
+        String username, password;
+        username = "maor";
+        password = "roam";
+        Login login = new Login(username, password);
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(10), "No marco una opcion valida");
+    }
+
+    @Test
+    public void testCase10(){
+        String username, password;
+        username = "maor";
+        password = "roam";
+        Login login = new Login(username, password);
+        Menu menu = new Menu();
+        Assert.assertEquals(menu.chooseOption(1), "Actualmente, 50% de personas estan vacunadas");
+    }
 };

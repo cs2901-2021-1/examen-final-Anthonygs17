@@ -9,10 +9,6 @@ public class Menu {
 
     public Menu(){}
 
-    public Menu(int option) {
-        this.option = option;
-    }
-
     public void displayMenu(){
         Scanner scanner = new Scanner(System.in);
         logger.info("Elija una de las opciones a continuacion: ");
@@ -46,7 +42,7 @@ public class Menu {
                 response = "Hay 6 564 323 personas vacunadas parcialmente";
                 break;
             case 5:
-                response = "Hay 6 564 323 personas vacunadas completamente";
+                response = "Hay 3 842 323 personas vacunadas completamente";
                 break;
             case 6:
                 response = "Elija el centro de vacunacion para dar de alta";
