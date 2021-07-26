@@ -26,6 +26,10 @@ public class Menu {
         logger.info("8. Cerrar sesión");
         option = scanner.nextInt();
         scanner.close();
+        chooseOption(option);
+    }
+
+    public void chooseOption(int option){
         switch (option){
             case 1:
                 logger.info("Actualmente, 50% de personas estan vacunadas");
@@ -43,15 +47,16 @@ public class Menu {
                 logger.info("Hay 6 564 323 personas vacunadas completamente");
                 break;
             case 6:
-                logger.info("Elija el centro de vacunacion");
+                logger.info("Elija el centro de vacunacion para dar de alta");
                 break;
             case 7:
-                logger.info("Elija el centro de vacunacion");
+                logger.info("Elija el centro de vacunacion para dar de baja");
                 break;
             case 8:
                 logger.info("Vuelva pronto!");
                 break;
-                
+            default:
+                logger.info("No marco una opcion valida");
         }
     }
 
